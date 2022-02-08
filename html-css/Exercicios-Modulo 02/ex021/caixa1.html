@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level */
+            background-color: lightcyan;
+            height: 300px;
+            width: 300px;
+           
+           /* border-width: 10px;
+            border-style: solid;
+            border-color:lightgreen; */
+            /* largura - style - cor */
+            border: 10px solid lightgreen; 
+            
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; 
+
+            Short cut= top - right - bottom - left (igual o relogio)
+            padding: 10px 10px 10px 10px; 
+
+            mas se for tudo igual: 
+            padding: 10px;
+
+            mas quando coloca dois valores  primeiro é o de cima/baixo e o segundo é direita/esquerda */
+            padding: 10px 20px;
+
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            cima-direita-baixo-esquerda */
+            margin: 20px auto 40px auto;
+
+           /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: lime; */
+            outline: 5px dashed lime;
+        }
+        a { /*inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-level</h1> <!--Caixa do tipo BOX-LEVEL-->
+    <p>Parágrafos também são exemplo de box-level, mas os <a href="#">links são exemplos de caixas iline-leve</a>.Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

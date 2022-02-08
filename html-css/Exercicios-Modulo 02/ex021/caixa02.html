@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: lightskyblue;
+            margin: 0px; /* tira a margim do body */
+        }
+        header {
+            background-color: lightslategray;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: lightsteelblue;
+            text-align: center;
+            padding: 3px;
+            box-shadow: 4px 3px 7px  rgba(0, 0, 0, 0.425);
+
+        } 
+        nav > a{
+            color: black;
+            text-decoration: none;
+            padding: 5px;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            color: lightslategray;
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            width: 700px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 25px 2px; /*cima esquerda, baixo direita - cima direita, baixo esquerda */ 
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.377);
+        }
+        article > aside{
+            text-align: right;
+        }
+        #assuntos {
+            text-align: center;
+        }
+        #noticias > article > h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        footer{
+            background-color: rgb(100, 120, 146);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Menu Site</h1>
+        <nav> <!--menu-->
+            <a href="#">Home</a>
+            <a href="#">Direitos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos">
+            <p>Esportes Livros Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias de Livros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium, magni suscipit quae nam culpa rem eum soluta provident possimus similique impedit dolore reiciendis! Perspiciatis odit optio ipsam minima quis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit labore dolorem placeat ipsa explicabo, veniam excepturi possimus adipisci ullam enim harum fugiat consequatur recusandae id quibusdam facilis expedita? Quidem, fuga.</p>
+                <aside> <!--conteudo relativo ao artigo-->
+                    <p>Artigo escrito pela Coolen Hoover</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pela Thaynara com uma parceria com o CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
