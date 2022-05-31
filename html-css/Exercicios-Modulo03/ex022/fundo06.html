@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+           /* background-color: black; > Mesmo que for usar uma imagem de fundo o ideal é ter uma cor tambem para o background não ficar branco antes de terminar de carregar
+
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            
+            background-size: cover;
+             sizes:
+                auto > padrão
+                100px 100px (tamanho fixo) > pode usar px, vh, etc.
+                contain > faz a imagem ser 100% exibida criando barras laterais
+                cover > cobre a tela inteira mesmo cortando um pouco da imagem
+            
+            
+            background-attachment: fixed;
+            
+                Shorthand - background
+                color> image > posisiton > repeat  > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg')center center no-repeat fixed;
+            background-size: cover;
+
+        }
+        main {
+            background-color: white;
+            max-width: 600px;
+            padding: 10px;
+            margin: auto;
+            border: 2px solid blue;
+            border-radius: 15px;
+            margin-top: 3em;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Nesta aula vimos o background-size. Vimos algumas propriedades dele como o <strong><abbr title="mostra na tela indeir quebrndo um pouco as laterais">cover</abbr></strong>, <strong><abbr title="faz a imagem ser 100% exibida criando barras laterais">contain</abbr></strong>, ou simplismente usar o size normal com <em>px, vh, etc</em> </p>
+        <p>Aora vamos ver o fundo fixo de tela. Isso se chama <strong><em><abbr title="attachment">vinculo</abbr></em></strong></p>
+        <h2>Attachment - Fundo fixo</h2>
+        <p>O <em>background-attachment</em> tem basicamente duas propriedades, o <em>scroll</em> que é o padrão que deixa o fundo rolar junto com o conteúdo. E uma outra propriedade é o <em>fixed</em> que faz o fundo ficar fixo</p>
+        <h2>Também podemos usar os shorthand de background!</h2>
+        <p>Vamos ver como funciona!</p>
+        <h3>Ordem da shorthand</h3>
+        <p>color > image > posisiton > repeat > <abbr title="esta na regra que pode usar o size aqui, mas ainda não esta aplicavel">size</abbr> > attachment</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magnam rerum aperiam neque quibusdam quidem perspiciatis similique vitae maiores ipsa, harum sequi alias quis aut natus commodi earum minus. Placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis et temporibus inventore saepe odio itaque incidunt error ducimus, placeat, natus asperiores sapiente iure aspernatur! Sunt saepe sapiente voluptate animi earum.</p>
+        <p><strong>SE O CONTEUDO FOR MUITO GRANDE ELE A IMAGEM NÃO VAI COBRIR TUDO!</strong></p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio, a labore quae sapiente eius maxime officia optio. Temporibus hic molestias voluptates fugit id suscipit, sapiente cum amet ratione vel!</P>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque animi ratione quisquam dolor, similique recusandae illo, nobis ea voluptate quae eos cupiditate impedit ad dignissimos distinctio rerum quasi, dolore expedita aut molestias reprehenderit amet non? Expedita dolorum deserunt culpa accusamus odit velit quos placeat molestias ea. Minima perferendis, architecto voluptatum sapiente fugit ea doloremque ad dolorum ratione labore impedit quas, ab nam. Hic qui quos sed porro cupiditate repudiandae ullam esse, fugiat a optio deserunt, ab corrupti iusto aut aspernatur quidem tenetur? Quidem explicabo tempore aut eveniet debitis saepe beatae cupiditate animi incidunt dolorem amet eaque voluptates assumenda, neque consequuntur accusamus. Illo asperiores consequatur obcaecati autem officia ut libero provident alias expedita quos magni, reiciendis recusandae dolorem corrupti sint enim, ratione sit, molestias voluptates blanditiis. Omnis ut, vitae repellat fugiat dolores autem? Aut minus odit commodi odio nisi dignissimos, magni architecto magnam tempore sed facilis ut molestiae corrupti et rerum voluptas provident, debitis similique? Facilis consectetur labore dolor nisi a tempore, tempora sint quod esse obcaecati non assumenda eaque aut nihil qui dolorum veritatis ex nesciunt illo voluptate ullam dicta nostrum. Distinctio qui magnam dolorum molestias ullam corporis ducimus sapiente atque ab deserunt, inventore perspiciatis provident dolore aliquam eaque esse. Obcaecati quam labore saepe, expedita autem dicta dolore similique earum illo, eum impedit quos nulla consequuntur cumque fugit in enim reprehenderit aperiam corrupti cupiditate eveniet? Maiores aliquam temporibus totam vitae doloremque explicabo reiciendis commodi facilis ad impedit doloribus reprehenderit perferendis, ipsa molestias excepturi non odio consequuntur odit. Dignissimos </P>
+    </main>
+</body>
+</html>

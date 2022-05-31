@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.nav-tabs {
+    background-color: #fff;
+    width: 600px;
+    height: 400px;
+
+    margin: 100px auto;
+    position: relative;
+}
+
+.nav-tabs ul li {
+    float: left;
+}
+
+label {
+    width: 100px;
+    padding: 25px;
+    background-color: #363b48;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rd-tabs {
+    display: none;
+}
+
+.rd-tabs:checked ~ label {
+    background-color: #e54343;
+}
+
+.content {
+    border-top: 5px solid #e54343;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 600px;
+    left: 0px;
+}
+
+.content article {
+    padding: 10px;
+    text-align: justify;
+}
+.rd-tabs:checked ~ .content {
+    display: block;
+}
