@@ -16,5 +16,7 @@ Módulo 3 capítulo 20
     display: inline-block; *Caixa que se adapta ao tamanho do conteúdo*
 
 - Aula 06: Imagens com efeito Parallax simples
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5); /*deixa a sombra para dentro*/
+  Usamos o background-attachment: fixed; para fazer o efeito Parallax
 
 - Aula 07: Hospedando o projeto cordel
