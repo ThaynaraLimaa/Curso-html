@@ -56,7 +56,11 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
-    font-size: 2.8vw;
+    font-size: 2.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -65,13 +69,28 @@ section.normal {
 }
 
 section.imagem {
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5); /*deixa a sombra para dentro*/
 }
 
-section.imagem p {
-    background-color: rgb(92, 91, 91);
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    text-shadow: 1px 1px  0px rgba(0, 0, 0, 0.2);
     display: inline-block;
+}
+
+section#img01{
+    background-image: url('imagens/background001.jpg');
+}
+
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    
 }
 
 footer {
