@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+            position: relative;
+        }
+
+        caption {
+            background-color: #d2d2d2;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        thead, tfoot {
+            background-color: #8a8a8a;
+            color: #fff;
+        }
+
+        thead > tr > th { /*Deixando o header da tabela grudado*/
+            position: sticky;
+            top: -1px;
+            background-color: #8a8a8a;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        *Anatomia para tabelas grandes*
+        Table
+            caption
+            thead // não obrigatorio
+                <tr>,<td>,<th>
+            tbody
+                <tr>,<td>,<th>
+            tfoot // não obrigatorio
+                <tr>,<td>,<th>
+     -->
+    <table>
+        <caption>10 estados com mais população do brasil</caption>
+        <thead> <!--Cabaçalho-->
+
+            <th scope="col">Estado</th>
+            <th scope="col" style="width:60px;">População</th>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.396.484</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.178.127</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.202.943</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.255 </td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.577.071</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.323.323</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.344</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.797</td>
+            </tr>
+            
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.065.098</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td class="num">6.345.633</td>
+            </tr>
+
+            <tr>
+                <td>Acre</td>
+                <td class="num">5.304.034</td>
+            </tr>
+
+            <tr>
+                <td>N sei</td>
+                <td class="num">5.304.034</td>
+            </tr>
+
+            <tr>
+                <td>mais qual</td>
+                <td class="num">5.304.034</td>
+            </tr>
+
+            <tr>
+                <td>estado colocar</td>
+                <td class="num">5.304.034</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>168.250.465</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto excepturi voluptatum, accusamus veritatis cum incidunt, in voluptatibus vitae tempora optio eum? Debitis sit inventore minima quas deserunt repellat soluta dolorum animi velit consequuntur sed fuga, quaerat nulla voluptate aspernatur ratione incidunt excepturi! Facilis quod vitae deleniti vero ut id necessitatibus laborum, obcaecati quas quia? Quidem mollitia velit iusto magni facere. Quasi ratione animi praesentium harum reprehenderit soluta voluptate dolorem placeat similique reiciendis, optio ad illum. Rerum, quae, dolore dolorum expedita molestiae est, mollitia officia sit ipsam nisi sequi asperiores exercitationem cum beatae explicabo sed itaque? Deleniti iure aliquam ipsam tenetur illum odio cupiditate quas quisquam quaerat non, neque soluta vel voluptatem porro iusto earum in voluptates consequatur quos commodi blanditiis excepturi veritatis repellendus consectetur. Quae, id. Deleniti, dolor soluta. Nihil autem suscipit animi nobis quod iusto exercitationem? Qui itaque fugiat quia inventore odit amet dolorum odio eum quaerat officiis aut quidem culpa est, maxime quae in quod, explicabo eaque ipsam harum praesentium? Soluta unde, repellendus quibusdam doloribus veniam impedit voluptas, architecto similique esse cumque quos ut fuga nemo dolorum optio atque. Deserunt, assumenda reprehenderit! Tempore, nulla? Ipsa impedit at aperiam dicta esse iure modi, deserunt obcaecati, molestias ab veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure commodi eligendi vero reprehenderit ad, eos cum nesciunt fuga consequuntur magnam quae excepturi ducimus sint possimus aliquid suscipit tenetur architecto sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas libero assumenda molestiae, distinctio dolores quo, debitis eum quasi consectetur illum modi reiciendis nulla deserunt ab earum fugiat soluta quos quibusdam!</p>
+</body>
+</html>
